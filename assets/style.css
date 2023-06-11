@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'SegoeUI';
+    src: url(./fonts/SegoeUI.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid blueviolet; */
+}
+
+.wrapper {
+    font-family: 'SegoeUI';
+    max-width: 1440px;
+    width: 100%;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px 0 20px;
+}
+
+.header-mob {
+    display: none;
+}
+
+.header360 {
+    display: none;
+}
+
+.logo {
+    max-width: 167px;
+    max-height: 40px;
+}
+
+li {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline;
+    padding-left: 30px;
+}
+
+.tel-head {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.time-work {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.application {
+    width: 152px;
+    height: 40px;
+    background: #F9D061;
+    border-radius: 8px;
+    border: none;
+}
+
+.lang {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.conteyner {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.main-text {
+    display: flex;
+    height: 187px;
+    align-items: center;
+}
+
+.main {
+    margin-right: 10px;
+}
+
+.main-catalog {
+    margin-left: 10px;
+}
+
+.catalog-text {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #30362F;
+    text-align: center;
+    margin-bottom: 147px;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 260px);
+    grid-template-rows: repeat(2, minmax(454px, 1fr));
+    gap: 40px;
+}
+
+.product1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.product-name {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.product-text {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.button-product {
+    width: 220px;
+    height: 40px;
+    background: #30362F;
+    border-radius: 8px;
+    color: white;
+}
+
+@media(max-width:768px) {
+    .head {
+        display: none;
+    }
+
+    .header360 {
+        display: none;
+    }
+
+    .header-mob {
+        display: block;
+        width: 100%;
+    }
+
+    .main-text {
+        display: flex;
+        align-items: center;
+        height: 30px;
+    }
+
+    .conteyner {
+        padding-left: 20px;
+    }
+
+    .catalog-text {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .product {
+        grid-template-columns: repeat(auto-fit, 229px);
+        gap: 10px;
+    }
+
+    .product1 img {
+        max-width: 189px;
+        max-height: 140px;
+    }
+
+    .product-name {
+        font-size: 16px;
+    }
+
+    .product-text {
+        font-size: 13px;
+    }
+
+    .button-product {
+        width: 189px;
+        height: 40px;
+        background: #30362F;
+        border-radius: 8px;
+        color: white;
+    }
+}
+
+@media(max-width:360px) {
+    .head {
+        display: none;
+    }
+
+    .header-mob {
+        display: none;
+    }
+
+    .header360 {
+        display: block;
+    }
+
+    .catalog-text {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        font-size: 24px;
+    }
+
+    .main-text {
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    .product {
+        grid-template-columns: repeat(auto-fit, 320px);
+        grid-template-rows: repeat(auto-fit, 394px);
+        gap: 20px;
+    }
+
+    .main-img {
+        max-width: 280px;
+        max-height: 120px;
+        margin: 0 auto;
+    }
+
+    .product-name {
+        font-size: 18px;
+    }
+
+    .product-text {
+        font-size: 14px;
+    }
+
+    .button-product {
+        width: 280px;
+        height: 40px;
+    }
+}
